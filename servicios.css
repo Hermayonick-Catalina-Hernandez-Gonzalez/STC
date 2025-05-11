@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header fijo con transición de color */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.scrolled {
+    background-color: #222;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    transition: transform 0.3s ease;
+}
+
+header.scrolled .logo-container img {
+    transform: scale(1.1);
+}
+
+.logo-small {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Espacio para que el header fijo no tape el contenido */
+body::before {
+    content: "";
+    display: block;
+    height: 80px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 200px 20px; 
+    background-image: url("trabajo/12.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h4 {
+    font-size: 40px;
+    color: #ffffff;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.informacion {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.informacion h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.informacion p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.info-columna,
+.social-columna {
+    flex: 1;
+    min-width: 250px;
+}
+
+.info-columna p,
+.social-columna p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-columna h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.instagram-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.social-columna a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.social-columna a:hover {
+    color: #f39c12;
+}
+
+.social-columna a:hover .instagram-logo {
+    transform: scale(1.1);
+}
+
+.servicios-content {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color:  rgba(6, 22, 103, 0.66);
+}
+
+.servicios-content h4 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.intro-servicio {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tarjeta-servicio {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.tarjeta-servicio:hover {
+    background-color: #f39c12;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.tarjeta-servicio:hover h5,
+.tarjeta-servicio:hover p {
+    color: white;
+}
+
+.tarjeta-servicio img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.tarjeta-servicio h5 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tarjeta-servicio p {
+    font-size: 16px;
+    color: #444;
+}
+
+.servicios-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mas {
+    padding: 60px 20px;
+    background-color:  rgba(6, 22, 103, 0.66);
+    text-align: center;
+}
+
+.mas-content h4 {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slideInFromBottom 1s ease-out;
+}
+
+.mas-content p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

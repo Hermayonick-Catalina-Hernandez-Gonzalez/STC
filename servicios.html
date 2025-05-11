@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="servicios.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo de STC" class="logo-small" />
+            <span class="brand-name">STC</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="empresa.html">Acerca de STC</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h4>Servicios</h4>
+        </div>
+    </section>
+
+
+    <section class="servicios">
+        <div class="servicios-content">
+            <h4>Servicios disponibles</h4>
+        </div>
+        <div class="servicios-grid">
+            <div class="tarjeta-servicio">
+                <img src="trabajo/4.png" alt="Soporte a distancia">
+                <div class="contenido-servicio">
+                    <h5>Soporte Técnico a Distancia</h5>
+                    <p>¿Tienes un problema urgente? No te preocupes. Nuestro equipo puede ayudarte de forma remota por videollamada o chat en cuestión de minutos. Rápido, eficiente y sin complicaciones.</p>
+                </div>
+            </div>          
+            <div class="tarjeta-servicio">
+                <img src="trabajo/3.png" alt="Soporte presencial">
+                <div class="contenido-servicio">
+                    <h5>Soporte Técnico Presencial</h5>
+                    <p>Cuando lo remoto no es suficiente, vamos a ti. Ya sea en tu hogar o en tu empresa, brindamos atención personalizada con soluciones inmediatas para tus equipos tecnológicos.</p>
+                </div>
+            </div>              
+        </div>
+    </section>
+    
+    
+
+    <section class="mas">
+        <div class="mas-content">
+            <h4>Tu equipo en manos seguras.</h4>
+            <p>En STC nos tomamos muy en serio el cuidado de tu equipo. Cada reparación, mantenimiento o diagnóstico es realizado por técnicos capacitados, con atención al detalle y compromiso.</p>
+        </div>
+    </section>
+    
+
+    <section class="informacion">
+        <h2>Contáctanos</h2>
+        <div class="contacto-container">
+            <div class="info-columna">
+                <p><strong>Correo electrónico:</strong> soporteyservicio.stc@gmail.com</p>
+                <p><strong>Teléfono:</strong> 8995014670</p>
+            </div>
+
+            <div class="social-columna">
+                <a href="https://www.instagram.com/soporte_y_servicio_stc?igsh=MXZ0eWI2NDdkejJ1aw==" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram Logo" class="instagram-logo" />
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

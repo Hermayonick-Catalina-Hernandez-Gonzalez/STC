@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de STC</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="empresa.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo de STC" class="logo-small" />
+            <span class="brand-name">STC</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="empresa.html">Acerca de STC</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h4>Acerca de STC</h4>
+        </div>
+    </section>
+
+
+    <section class="nosotros">
+        <div class="nosotros-content">
+            <h4>STC es una empresa creada para ofrecerte soluciones rápidas y confiables en reparaciones y mantenimiento de equipos de computo.</h4>
+        </div>
+        <div class="nosotros-content">
+            <img src="trabajo/8.png" alt="ejemplo">
+            <img src="trabajo/9.png" alt="ejemplo2">
+        </div>
+    </section>
+
+
+
+    <section class="mas">
+        <div class="mas-container">
+            <h4>Nacimos de la pasión por la tecnología y el compromiso con nuestros clientes. Con años de experiencia, nos hemos consolidado como un aliado de confianza, brindando servicios de calidad que garantiza el buen funcionamiento de sus equipos. </h4>
+        </div>
+    </section>
+
+    <section class="equipo">
+        <div class="equipo-container">
+            <h2>Conoce nuestro equipo</h2>
+            <div class="miembros-grid">
+                <div class="miembro">
+                    <img src="equipo/director.png" alt="Director">
+                    <p><strong>Galván Almanza Leonardo Ángel</strong><br>Director General</p>
+                </div>
+                <div class="miembro">
+                    <img src="equipo/calidad.png" alt="Encargado de Control de Calidad">
+                    <p><strong>Encargado</strong><br>Control de Calidad</p>
+                </div>
+                <div class="miembro">
+                    <img src="equipo/presencial.png" alt="Encargado de Servicio Presencial">
+                    <p><strong>Encargado</strong><br>Servicio Presencial</p>
+                </div>
+                <div class="miembro">
+                    <img src="equipo/rrhh.png" alt="Recursos Humanos">
+                    <p><strong>Encargado</strong><br>Recursos Humanos</p>
+                </div>
+                <div class="miembro">
+                    <img src="equipo/marketing.png" alt="Marketing">
+                    <p><strong>Encargado</strong><br>Marketing</p>
+                </div>
+                <div class="miembro">
+                    <img src="equipo/soporte.png" alt="Soporte a Distancia">
+                    <p><strong>Encargado</strong><br>Soporte a Distancia</p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    <section class="informacion">
+        <h2>Contáctanos</h2>
+        <div class="contacto-container">
+            <div class="info-columna">
+                <p><strong>Correo electrónico:</strong> soporteyservicio.stc@gmail.com</p>
+                <p><strong>Teléfono:</strong> 8995014670</p>
+            </div>
+
+            <div class="social-columna">
+                <a href="https://www.instagram.com/soporte_y_servicio_stc?igsh=MXZ0eWI2NDdkejJ1aw==" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram Logo" class="instagram-logo" />
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
